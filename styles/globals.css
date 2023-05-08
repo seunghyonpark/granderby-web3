@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .grow-on-hover {
+        @apply transition ease-in-out hover:scale-105 active:scale-105
+    }
+
+    .large-text {
+        @apply p-6 text-2xl font-semibold
+    }
+    .primary-button {
+        @apply hover:bg-slate-500 active:bg-slate-500 bg-slate-300 font-semibold focus:shadow-[0_0_8px_0_rgba(4,17,29,0.25)] rounded-xl border border-slate-200 p-2 text-center}
+
+    .primary-input {
+        @apply rounded-lg border border-slate-200 focus:shadow-[0_0_8px_0_rgba(4,17,29,0.25)] focus:outline-none
+    }
+}
