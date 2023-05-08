@@ -23,7 +23,7 @@ const Home: NextPage = () => {
 
   if (isLoading) {
     return <div className="large-text">Loading...</div>;
-  } else if (data.length === 0) {
+  } else if (data?.length === 0) {
     return <div className="large-text">No Data To Show</div>;
   }
 
